@@ -1,7 +1,6 @@
 FROM alpine:3.12
 
 
-# POSTFIX
 RUN apk add --no-cache postfix
 RUN mkdir /var/mail/domains
 RUN chown vmail:postdrop /var/mail/domains
